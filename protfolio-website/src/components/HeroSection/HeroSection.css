@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 780px;
+    height: 800px;
   
     
 }
@@ -12,6 +12,7 @@
     height: inherit;
     position: absolute;
     border-radius: 6px;
+    object-fit: cover;
 }
 .hero-content{
     display: flex;
@@ -24,44 +25,70 @@
 }
 
 .hero-content img{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    border: 2px solid white;
+    width: 80px;
+    border-radius: 50%;
+
+    filter: drop-shadow(1px 1px 5px rgb(0,0,0,45%));
+    &:hover{
+        filter: drop-shadow(1px 1px 5px rgb(255, 76, 22));
+    }
 
 }
 
 .short-about{
     width: 500px;
-    padding: 20px;  
+    padding: 10px;  
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
      
 }
 
 .short-about span,.short-about h1,.short-about p{
-    margin-top: 8px;
-    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.60 );
+    margin-top: 6px;
+    filter: drop-shadow(1px 1px 6px rgb(0,0,0,35%));
+    width: 400px;
+  }
+  .short-about span{
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .short-about p{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+.short-about h1{
+    font-size: 30px;
+    font-weight: 100;
+    word-spacing: 10px;
+    text-align: center;
     
 }
 
-.short-about h1{
-    font-size: 40px;
-}
-
 .resume-btn{
-    margin-top: 10px;
-    width: 140px;
-    height: 50px;
-    border-radius: 6px;
+    margin-top: 8px;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
     border: none;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
-    box-shadow: 4px 4px rgb(44, 44, 44);
-   background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+
+    &:hover{
+        border: 2px solid rgb(255, 91, 32);
+        font-size: 11px;
+        border-radius: 4px;
+    }
 }
 
 .name{
-    font-family: 'IBM Plex Sans Hebrew',sans-serif;
+    font-weight: 400;
 }
 

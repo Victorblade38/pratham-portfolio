@@ -1,0 +1,19 @@
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    margin-top: 60px;
+    
+}
+
+.about-section h1{
+    font-size: 30px;
+}
+.about-section p{
+    margin-top: 40px;
+    width: 80%;
+    word-spacing: 4px;
+    
+}
