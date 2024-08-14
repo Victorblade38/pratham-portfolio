@@ -4,7 +4,7 @@ import "./AboutSection.css";
 const AboutSection = () => {
   return (
     <div className="about-section">
-      <h1>? About me</h1>
+      <h1>About me</h1>
       <p>
         I'm Pratham Mhavale , web Developer from Mumbai , India, with a
         Bachelor's degree in Computer Science. I focus on creating visually

@@ -1,0 +1,39 @@
+.contact-section {
+    text-align: center;
+    padding: 40px 40px;
+    margin-top: 40px;
+  }
+  
+  .contact-section h1 {
+    margin-bottom: 40px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+
+  }
+  
+  .contact-item img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .contact-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .contact-item a:hover {
+    color: #007bff;
+  }

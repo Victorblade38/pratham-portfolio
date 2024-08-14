@@ -2,5 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: FFFCF5;
+}
+
+body{
+    background-color: #fffff0;
+}
+
+.footer{
+    background-color: #f7f7f7;
+    width: fit-content;
+    height: 200px;
+}
+
+h1{
+    font-size: 20px;
 }

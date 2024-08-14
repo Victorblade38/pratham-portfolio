@@ -5,7 +5,7 @@ import skills from "../skills";
 const SkillsSection = () => {
   return (
     <div className="skills-section">
-      <h1>{"{Skills}"}</h1>
+      <h1>Skills</h1>
       <div className="skills-card-container">
         {Object.keys(skills).map((key) => (
           <div className="skills-card" key={key}>

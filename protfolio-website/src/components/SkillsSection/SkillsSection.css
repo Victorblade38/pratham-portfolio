@@ -22,14 +22,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
     width: 120px;
     height: 140px;
     border: 1px solid black;
     border-radius: 4px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease,box-shadow 0.2s ease;
+    box-shadow: -4px 4px 0px orange;
     &:hover{
-        box-shadow: -4px 4px 0px orange;
-        transform: translate(1px, 1px);
+
+        transform: translate(-4px, 4px);
+        box-shadow: none;
     }
     
 }
