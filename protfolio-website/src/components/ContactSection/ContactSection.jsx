@@ -10,13 +10,17 @@ const ContactSection = () => {
       <h1>Connect with Me</h1>
       <div className="contact-info">
         <div className="contact-item">
-          <img src={email} alt="Email Icon" />
+          <div className="icon-border">
+            <img src={email} alt="Email Icon" />
+          </div>
           <a href="prathammhavale38@gmail.com">
-            <span>Email</span>
+            <span>prathammhavale38</span>
           </a>
         </div>
-        <div className="contact-item" onClick={""}>
-          <img src={linkedin} alt="LinkedIn Icon" />
+        <div className="contact-item">
+          <div className="icon-border">
+            <img src={linkedin} alt="LinkedIn Icon" />
+          </div>
           <a
             href="https://www.linkedin.com/in/pratham-mhavale-a2899a262/"
             target="_blank"
@@ -26,7 +30,9 @@ const ContactSection = () => {
           </a>
         </div>
         <div className="contact-item">
-          <img src={github} alt="GitHub Icon" />
+          <div className="icon-border">
+            <img src={github} alt="GitHub Icon" />
+          </div>
           <a
             href="https://github.com/Victorblade38"
             target="_blank"

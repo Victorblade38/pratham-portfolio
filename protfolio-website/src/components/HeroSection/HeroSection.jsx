@@ -22,10 +22,6 @@ const HeroSection = () => {
         <div className="short-about">
           <span>--- hello</span>
           <h1 className="name">I am Pratham Mhavale</h1>
-          <p className="short-intro">
-            An aspiring developer with a knack for creativity and innovation in
-            web development.
-          </p>
         </div>
         <a href="/Pratham-Mhavale-CV.pdf" download>
           <button
