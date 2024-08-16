@@ -1,72 +1,43 @@
-.project-card {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    width: 250px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px solid black;
-}
-
-
-
-.project-card-img {
-    width: 100%;
-    background-color: #f0f0f0;
-    cursor: pointer;
-}
-
-.project-card-img img {
-    width: 100%;
-    background-color: #f0f0f0;
-    cursor: pointer;
-}
-
-.project-card-img .placeholder {
-    width: 100%;
-    height: 200px;
+.project-card{
+    width: 300px;
+    height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: gray;
-    color: white;
-    font-size: 14px;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid black;
+    background-color: white;
+
+    &:hover{
+        transform: scale(1.04);
+        box-shadow: 0px 0px 0px 10px rgba(1, 126, 252, 0.8);
+
+
+    }
+   
 }
 
-.project-card-info {
-    padding: 0 20px;
-    text-align: center;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.9);
+.project-card img{
+    width: 100%;
+    height: 70%;
+
 }
 
-.project-card-info.expanded {
-    height: auto; 
-    padding: 20px;
+.project-info{
+    padding: 14px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.project-card.clicked .project-card-info {
-    opacity: 1;
-    visibility: visible;
-}
-
-.project-card-info h3 {
-    margin: 0 0 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.project-card-info p {
-    margin: 5px 0;
-    color: #666;
-    line-height: 1.4;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.project-card-info.expanded h3,
-.project-card-info.expanded p {
-    opacity: 1;
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
 }

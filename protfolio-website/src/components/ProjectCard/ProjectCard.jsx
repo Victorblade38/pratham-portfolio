@@ -4,20 +4,13 @@ import bg from "../../assets/retro-bg.jpg";
 
 function ProjectCard() {
   return (
-    <div
-      className="card shadow p-3 mb-5 bg-body-tertiary rounded"
-      style={{ width: 30 + `rem` }}
-    >
-      <img
-        src={bg}
-        className="card-img-top"
-        alt="..."
-        style={{ height: 20 + `rem` }}
-      />
-      <div className="card-body">
-        <p className="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content. acsascas
+    <div className="project-card">
+      <img src={bg} alt="img" />
+      <div className="project-info">
+        <span>project-name</span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
+          ducimus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
         </p>
       </div>
     </div>
