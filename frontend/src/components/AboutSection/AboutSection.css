@@ -1,17 +1,26 @@
 .about-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    text-align: center;
+    color: var(--text-color);
+    height: 520px;
+    width: 100%;
     margin: 40px 0px;
-    
+    position: relative;
 }
 
+.about{
+    padding: 40px;
+    margin-left: 100px;
+}
+
+.about-section h1{
+    font-size: 30px;
+    font-weight: bold;
+}
 
 .about-section p{
     margin-top: 40px;
-    width: 80%;
+    width: 50%;
     word-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
     
 }

@@ -1,31 +1,32 @@
 .hero {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    position: relative;
-    margin: 0px 0px 20px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  position: relative;
 }
 
 .bg-img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-    z-index: 1; /* Ensure background is below content */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 1; /* Ensure background is below content */
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 2; /* Ensure content is above background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  z-index: 2; /* Ensure content is above background */
 }
 
-.hero-content img {
+/* .hero-content img {
     width: 80px;
     border-radius: 50%;
     filter: drop-shadow(1px 1px 5px rgb(0, 0, 0, 45%));
@@ -34,60 +35,38 @@
 
 .hero-content img:hover {
     filter: drop-shadow(1px 1px 5px rgb(255, 76, 22));
-}
+} */
 
 .short-about {
-    width: 500px;
-    padding: 10px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
-
-.short-about span, .short-about h1{
-    margin-top: 6px;
-    filter: drop-shadow(1px 1px 6px rgb(0, 0, 0, 35%));
-    width: 400px;
-}
-
-.short-about span {
-    font-size: 11px;
-    letter-spacing: 2px;
-}
-
-
 
 .short-about h1 {
-    font-size: 30px;
-    font-weight: 100;
-    word-spacing: 10px;
-    text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .resume-btn {
-    margin-top: 8px;
-    width: 120px;
-    height: 40px;
-    border-radius: 4px;
-    border: none;
-    font-size: 12px;
-    font-weight: 400;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: -4px 4px 0px orange;
-    cursor: pointer;
-    z-index: 3; /* Ensure button is clickable */
+  margin-left: 10px;
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: -4px 4px 0px orange;
+  cursor: pointer;
+  z-index: 3; /* Ensure button is clickable */
 }
 
 .resume-btn.clicked {
-    transform: translate(-4px, 4px);
-    box-shadow: none;
+  transform: translate(-4px, 4px);
+  box-shadow: none;
 }
-
-.name {
-    font-weight: 400;
-}
-
-

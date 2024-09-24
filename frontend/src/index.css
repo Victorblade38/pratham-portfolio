@@ -1,8 +1,25 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Goldman',sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     box-sizing: border-box;
+}
+
+:root{
+    --primary-bg-color:#222831;
+    --secondary-bg-color:#393E46;
+    --tertiary-bg-color:#EEEEEE;
+    --orange-theme:#FD7014;
+    --text-color:#fff;
+}
+
+body{
+    background-color: var(--secondary-bg-color);
+    color: #fff;
+    height: 100vh;
 }
