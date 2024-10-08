@@ -1,42 +1,77 @@
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: var(--primary-bg-color);
-    color: var(--text-color);
-    align-items: center;
-    height: 60px;
-    width: 100%; 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  align-items: center;
+  height: 60px;
+  width: 100%;
 }
 
-.logo-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo-img{
-    width: 25px;
-    height: 25px;
+.logo-container .myname {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
 }
 
-.logo-container .navlink{
-    font-size: 18px;
-    
-}
-.navlink{
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    
-}
-.nav-links{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    align-items: center;
+.logo-img {
+  width: 25px;
+  height: 25px;
 }
 
+.logo-container .navlink {
+  font-size: 18px;
+}
+.navlink {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+}

@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ProjectCard.css";
-import bg from "../../assets/retro-bg.jpg";
 
-function ProjectCard() {
+function ProjectCard({ name, about, completed, githubLink }) {
+  const [status, setStatus] = useState();
+
+  useEffect(() => {
+    if (completed) {
+      setStatus(true);
+    }
+  }, [completed]);
   return (
-    <div className="project-card">
-      <img src={bg} alt="img" />
-      <div className="project-info">
-        <span>project-name</span>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
-          ducimus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-        </p>
+    <div
+      className="project-card"
+      onClick={() => {
+        window.open(githubLink, "_blank"); // Open the GitHub link in a new tab
+      }}
+    >
+      <div className="title-section">
+        <span>{name}</span>
+        <span
+          className={`project-status ${status === true ? "done" : "ongoing"}`}
+        ></span>
       </div>
+      <p>{about}</p>
     </div>
   );
 }

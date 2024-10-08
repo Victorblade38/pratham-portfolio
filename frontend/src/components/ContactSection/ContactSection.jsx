@@ -13,7 +13,7 @@ const ContactSection = () => {
         <h1>Connect with Me</h1>
         <div className="contact-message">
           <input type="text" placeholder="name" />
-          <textarea name="" id="" rows={10}></textarea>
+          <textarea name="" id="" rows={10} placeholder="message"></textarea>
         </div>
         <div className="contact-info">
           <div className="contact-item">

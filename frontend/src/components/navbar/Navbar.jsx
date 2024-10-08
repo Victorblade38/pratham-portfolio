@@ -7,9 +7,8 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo-container">
-        <img className="logo-img" alt="logo-img" src={person_icon} />
-        <NavLink to="/" title="home" className="navlink">
-          prathammhavale
+        <NavLink to="/" title="home" className="myname">
+          प्रथम म्हावळे.
         </NavLink>
       </div>
       <div className="nav-links">
