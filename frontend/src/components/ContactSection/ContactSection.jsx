@@ -13,7 +13,7 @@ const ContactSection = () => {
         <h1>Connect with Me</h1>
         <div className="contact-message">
           <input type="text" placeholder="name" />
-          <textarea name="" id="" rows={10} placeholder="message"></textarea>
+          <textarea name="" id="" rows={6} placeholder="message"></textarea>
         </div>
         <div className="contact-info">
           <div className="contact-item">
@@ -39,18 +39,6 @@ const ContactSection = () => {
           <div className="contact-item">
             <div className="icon-border">
               <img src={github} alt="GitHub Icon" width={20} height={20} />
-            </div>
-            <a
-              href="https://github.com/Victorblade38"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>GitHub</span>
-            </a>
-          </div>
-          <div className="contact-item">
-            <div className="icon-border">
-              <img src={insta} alt="GitHub Icon" width={20} height={20} />
             </div>
             <a
               href="https://github.com/Victorblade38"

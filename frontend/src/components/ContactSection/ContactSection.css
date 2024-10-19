@@ -21,7 +21,7 @@
   textarea {
     padding: 10px;
     border-radius: 4px;
-    background-color: rgb(233, 233, 233);
+    border: 1px solid #1a1a1a;
     color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
 
@@ -32,6 +32,7 @@
 }
 .contact-section h1 {
   font-size: 30px;
+  color: var(--text-color);
 }
 
 .contact-info {
@@ -58,7 +59,7 @@
 
 .contact-item a {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
   font-size: 16px;
 }
 

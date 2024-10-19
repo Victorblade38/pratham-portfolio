@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./HeroSection.css";
-import bg from "../../assets/retro-bg.jpg";
+import resume from "../../assets/Pratham_Mhavale_CV4.pdf";
 
 const HeroSection = () => {
   const [clicked, setClicked] = useState(false);
@@ -20,8 +20,9 @@ const HeroSection = () => {
         <div className="short-about">
           <span>--- hello</span>
           <h1>I am Pratham Mhavale</h1>
+          <p>Frontend Developer</p>
         </div>
-        <a href="/Pratham-Mhavale-CV.pdf" download>
+        <a href={resume} download>
           <button
             className={`resume-btn ${clicked ? "clicked" : ""}`}
             onClick={handleClick}

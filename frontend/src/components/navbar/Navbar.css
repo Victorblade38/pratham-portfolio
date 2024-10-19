@@ -8,6 +8,7 @@
   align-items: center;
   height: 60px;
   width: 100%;
+  box-shadow: 0px 2px 4px rgba(24, 24, 24, 0.2);
 }
 
 .logo-container {
@@ -20,23 +21,7 @@
 .logo-container .myname {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
-  font-size: 26px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
-  }
-
-  &:hover::after {
-    transform: scaleX(1);
-  }
+  font-size: 22px;
 }
 
 .logo-img {
@@ -60,7 +45,7 @@
     width: 100%;
     bottom: 0;
     left: 0;
-    background-color: white;
+    background-color: blue;
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }

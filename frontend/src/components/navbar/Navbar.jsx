@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="logo-container">
         <NavLink to="/" title="home" className="myname">
-          प्रथम म्हावळे.
+          {/* प्रथम म्हावळे. */}pratham
         </NavLink>
       </div>
       <div className="nav-links">
