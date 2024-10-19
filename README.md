@@ -6,4 +6,4 @@ This is my personal portfolio website built using React, Vite, JavaScript, and T
 - **React** - For building dynamic and interactive user interfaces.
 - **Vite** - For a fast development environment and optimized production builds.
 - **JavaScript** - For adding interactivity and handling functionality.
-- **Tailwind CSS** - For styling and creating a responsive, mobile-friendly design.
+
