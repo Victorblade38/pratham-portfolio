@@ -49,3 +49,14 @@
   font-weight: 600;
   line-height: 1.4;
 }
+
+@media (max-width: 1000px) {
+  .profile {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-section p {
+    font-size: 16px;
+  }
+}

@@ -5,10 +5,9 @@
   height: 600px;
 }
 .contact-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 40px;
-  column-gap: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contact-message {
@@ -55,6 +54,7 @@
   padding: 10px;
   border-radius: 4px;
   background-color: #fff;
+  border: 1px solid #1a1a1a;
 }
 
 .contact-item a {
@@ -64,5 +64,5 @@
 }
 
 .contact-item a:hover {
-  color: #007bff;
+  color: rgb(90, 214, 255);
 }

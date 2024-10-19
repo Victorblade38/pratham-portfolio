@@ -9,12 +9,7 @@ const ContactSection = () => {
   return (
     <div className="contact">
       <div className="contact-section">
-        <h1>Feedback / Message</h1>
-        <h1>Connect with Me</h1>
-        <div className="contact-message">
-          <input type="text" placeholder="name" />
-          <textarea name="" id="" rows={6} placeholder="message"></textarea>
-        </div>
+        <h1>Contact and Connect</h1>
         <div className="contact-info">
           <div className="contact-item">
             <div className="icon-border">
