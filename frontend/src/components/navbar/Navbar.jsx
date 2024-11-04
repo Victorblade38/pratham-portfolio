@@ -5,11 +5,11 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div
-      className="bg-white/30 backdrop-blur-lg p-2 md:p-10 shadow-sm
+      className="h-[60px] bg-white/30 backdrop-blur-lg p-2 md:p-10 shadow-sm
     w-screen flex flex-row  justify-around items-center bg-gray-400"
     >
       <NavLink to="/">
-        <img src={person_icon} className="w-[20px] md:w-8" />
+        <img src={person_icon} className="w-[30px] md:w-8" />
       </NavLink>
       <div className="flex gap-4 text-[12px] md:text-lg ">
         <NavLink to="/about" title="about section" className="">
