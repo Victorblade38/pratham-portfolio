@@ -11,7 +11,7 @@ const Navbar = () => {
       <NavLink to="/">
         <img src={person_icon} className="w-[30px] md:w-8" />
       </NavLink>
-      <div className="flex gap-4 text-[12px] md:text-lg ">
+      <div className="flex gap-4 text-[14px] md:text-lg ">
         <NavLink to="/about" title="about section" className="">
           about
         </NavLink>
