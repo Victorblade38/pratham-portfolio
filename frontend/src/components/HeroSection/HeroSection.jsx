@@ -34,7 +34,7 @@ const HeroSection = () => {
               } bg-blue-500 hover:bg-blue-700 px-4 py-2 text-white rounded-md shadow-md`}
               onClick={handleClick}
             >
-              <span className="text-[16px] lg:text-lg font-medium">Resume</span>
+              <span className="text-[16px] lg:text-lg font-medium">resume</span>
             </button>
           </a>
           <div className="flex flex-row gap-4">

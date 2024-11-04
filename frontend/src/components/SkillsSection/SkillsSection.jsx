@@ -8,7 +8,7 @@ const SkillsSection = () => {
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {Object.keys(skills).map((key) => (
           <div
-            className="flex flex-col gap-2 px-3 py-4 lg:p-6 items-center shadow-sm md:shadow-md rounded-md"
+            className="flex flex-col gap-2 px-3 py-4 lg:p-6 items-center shadow-sm lg:shadow-md rounded-md"
             key={key}
           >
             <img
