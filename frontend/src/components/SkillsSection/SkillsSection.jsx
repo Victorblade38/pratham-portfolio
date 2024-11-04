@@ -1,16 +1,18 @@
 import React from "react";
-import "./SkillsSection.css";
 import skills from "../skills";
 
 const SkillsSection = () => {
   return (
-    <div className="skills-section">
-      <h1>Skills</h1>
-      <div className="skills-card-container">
+    <div className="p-8 flex flex-col justify-center items-center gap-4">
+      <h1 className="font-bold">Skills</h1>
+      <div className="grid grid-cols-3">
         {Object.keys(skills).map((key) => (
-          <div className="skills-card" key={key}>
-            <img src={skills[key].img} alt={skills[key].name} />
-            <span>{skills[key].name}</span>
+          <div
+            className="flex flex-col gap-2 px-3 py-4 items-center shadow-md rounded-md"
+            key={key}
+          >
+            <img src={skills[key].img} alt={skills[key].name} className="w-8" />
+            <span className="text-[12px] font-medium">{skills[key].name}</span>
           </div>
         ))}
       </div>

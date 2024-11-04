@@ -1,46 +1,39 @@
 import React from "react";
-import "./ContactSection.css";
 import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
-import insta from "../../assets/instagram.png";
 import gmail from "../../assets/gmail.png";
 
 const ContactSection = () => {
   return (
-    <div className="contact">
-      <div className="contact-section">
-        <h1>Contact and Connect</h1>
-        <div className="contact-info">
-          <div className="contact-item">
-            <div className="icon-border">
-              <img src={gmail} alt="LinkedIn Icon" width={20} height={20} />
-            </div>
+    <div className="p-8 flex flex-col justify-center items-center gap-4">
+      <div className="flex flex-col gap-4 items-center">
+        <h1 className="font-bold">Contact and Connect</h1>
+        <div className="flex flex-col  gap-4">
+          <div className="flex flex-row items-center gap-2">
+            <img src={gmail} alt="LinkedIn Icon" className="w-4 h-4" />
             <a href="prathammhavale38@gmail.com">
-              <span>prathammhavale38</span>
+              <span className="text-[14px]">prathammhavale38</span>
             </a>
           </div>
-          <div className="contact-item">
-            <div className="icon-border">
-              <img src={linkedin} alt="LinkedIn Icon" width={20} height={20} />
-            </div>
+          <div className="flex flex-row items-center gap-2">
+            <img src={linkedin} alt="LinkedIn Icon" className="w-4 h-4" />
+
             <a
               href="https://www.linkedin.com/in/pratham-mhavale-a2899a262/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>LinkedIn</span>
+              <span className="text-[14px]">LinkedIn</span>
             </a>
           </div>
-          <div className="contact-item">
-            <div className="icon-border">
-              <img src={github} alt="GitHub Icon" width={20} height={20} />
-            </div>
+          <div className="flex flex-row items-center gap-2">
+            <img src={github} alt="GitHub Icon" className="w-4 h-4" />
             <a
               href="https://github.com/Victorblade38"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>GitHub</span>
+              <span className="text-[14px]">GitHub</span>
             </a>
           </div>
         </div>

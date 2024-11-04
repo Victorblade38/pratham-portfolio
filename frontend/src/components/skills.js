@@ -12,7 +12,7 @@ import nodeLogo from "../assets/node-js.png";
 const skills = {
   html: { name: "HTML", img: htmlLogo },
   css: { name: "CSS", img: cssLogo },
-  tailwind: { name: "TailwindCss", img: tailwindLogo },
+  tailwind: { name: "Tailwind", img: tailwindLogo },
   javascript: { name: "JavaScript", img: jsLogo },
   git: { name: "Git", img: gitLogo },
   github: { name: "GitHub", img: githubLogo },

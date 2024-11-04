@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./ProjectCard.css";
 
 function ProjectCard({ name, about, completed, githubLink }) {
   const [status, setStatus] = useState();
@@ -11,18 +10,20 @@ function ProjectCard({ name, about, completed, githubLink }) {
   }, [completed]);
   return (
     <div
-      className="project-card"
+      className="flex flex-col p-4 gap-2 items-center text-sm shadow-md rounded-md"
       onClick={() => {
         window.open(githubLink, "_blank"); // Open the GitHub link in a new tab
       }}
     >
-      <div className="title-section">
-        <span>{name}</span>
+      <div className="flex flex-row gap-2 items-center">
+        <span className="font-semibold">{name}</span>
         <span
-          className={`project-status ${status === true ? "done" : "ongoing"}`}
+          className={`w-4 h-4 rounded-full ${
+            status ? "bg-green-500" : "bg-orange-400"
+          }`}
         ></span>
       </div>
-      <p>{about}</p>
+      <p className="text-[12px]">{about}</p>
     </div>
   );
 }

@@ -1,12 +1,11 @@
 import React from "react";
-import "./AboutSection.css";
 
 const AboutSection = () => {
   return (
-    <div className="about-section">
-      <div className="about">
-        <h1>About me -- </h1>
-        <p>
+    <div className="p-8 flex flex-col justify-center items-center gap-4-10">
+      <div className="flex flex-col gap-2">
+        <h1 className="font-bold">About me -- </h1>
+        <p className="text-sm">
           I'm Pratham Mhavale , frontend developer from Mumbai , India, with a
           Bachelor's degree in Computer Science. I focus on creating visually
           appealing and user-friendly web interfaces. Aside from coding , I’m
@@ -15,7 +14,6 @@ const AboutSection = () => {
           ---
         </p>
       </div>
-      <div className="profile"></div>
     </div>
   );
 };
