@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import resume from "../../assets/Pratham_Mhavale_CV4.pdf";
+import linkedin from "../../assets/linkedin.png";
+import github from "../../assets/github.png";
+import gmail from "../../assets/gmail.png";
 
 const HeroSection = () => {
   const [clicked, setClicked] = useState(false);
@@ -23,16 +26,22 @@ const HeroSection = () => {
           </h1>
           <p className="lg:text-2xl font-semibold">Frontend Developer</p>
         </div>
-        <a href={resume} download>
-          <button
-            className={`resume-btn ${
-              clicked ? "clicked" : ""
-            } bg-blue-500 px-4 py-2 text-white rounded-md shadow-md`}
-            onClick={handleClick}
-          >
-            <span className="text-[14px] lg:text-lg">Resume</span>
-          </button>
-        </a>
+        <div className="flex flex-row justify-between items-center ">
+          <a href={resume} download>
+            <button
+              className={`resume-btn ${
+                clicked ? "clicked" : ""
+              } bg-blue-500 hover:bg-blue-700 px-4 py-2 text-white rounded-md shadow-md`}
+              onClick={handleClick}
+            >
+              <span className="text-[16px] lg:text-lg font-medium">Resume</span>
+            </button>
+          </a>
+          <div className="flex flex-row gap-4">
+            <img src={linkedin} alt="" className="w-6 h-6 " />
+            <img src={github} alt="" className="w-6 h-6 " />
+          </div>
+        </div>
       </div>
     </div>
   );
