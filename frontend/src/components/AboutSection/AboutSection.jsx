@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div className="p-8 flex flex-col justify-center items-center gap-4 mt-10">
+    <div className="p-8 md:px-32 flex flex-col justify-center items-center gap-4 mt-10">
       <div className="flex flex-col gap-4">
         <h1 className="font-semibold">About me -- </h1>
         <p className="text-sm">

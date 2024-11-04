@@ -3,9 +3,9 @@ import skills from "../skills";
 
 const SkillsSection = () => {
   return (
-    <div className="p-8 flex flex-col justify-center items-center gap-4">
+    <div className="p-8 flex flex-col justify-center items-center gap-4 ">
       <h1 className="font-bold">Skills</h1>
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-2">
         {Object.keys(skills).map((key) => (
           <div
             className="flex flex-col gap-2 px-3 py-4 items-center shadow-md rounded-md"

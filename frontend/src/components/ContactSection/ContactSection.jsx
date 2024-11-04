@@ -6,7 +6,7 @@ import gmail from "../../assets/gmail.png";
 const ContactSection = () => {
   return (
     <div className="p-8 flex flex-col justify-center items-center gap-4">
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-10 items-center">
         <h1 className="font-bold">Contact and Connect</h1>
         <div className="flex flex-col  gap-4">
           <div className="flex flex-row items-center gap-2">

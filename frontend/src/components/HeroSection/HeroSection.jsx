@@ -25,7 +25,7 @@ const HeroSection = () => {
           <button
             className={`resume-btn ${
               clicked ? "clicked" : ""
-            } bg-blue-500 px-4 py-2 text-white rounded-md`}
+            } bg-blue-500 px-4 py-2 text-white rounded-md shadow-md`}
             onClick={handleClick}
           >
             <span className="text-[14px]">Resume</span>

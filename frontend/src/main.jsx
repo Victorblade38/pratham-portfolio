@@ -23,6 +23,7 @@ const router = createBrowserRouter(
       <Route path="/skills" element={<SkillsSection />} />
       <Route path="/projects" element={<ProjectSection />} />
       <Route path="/contact" element={<ContactSection />} />
+      <Route path="*" element={<div>Not Found</div>} />
     </Route>
   )
 );
