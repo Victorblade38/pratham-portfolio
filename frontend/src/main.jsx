@@ -17,7 +17,7 @@ import ContactSection from "./components/ContactSection/ContactSection.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="" element={<Layout />}>
       <Route path="" element={<HeroSection />} />
       <Route path="about" element={<AboutSection />} />
       <Route path="skills" element={<SkillsSection />} />
