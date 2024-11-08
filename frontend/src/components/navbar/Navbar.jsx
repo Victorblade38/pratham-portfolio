@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div
       className="h-[60px] bg-white/30 backdrop-blur-lg p-2 md:p-10 shadow-sm
-    w-screen flex flex-row  justify-around items-center bg-gray-400"
+    w-screen flex flex-row  justify-around items-center bg-gray-100"
     >
       <NavLink to="/">
         <img src={person_icon} className="w-[30px] md:w-8" />
