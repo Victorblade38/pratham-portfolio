@@ -13,9 +13,9 @@ const ProjectSection = () => {
         ))}
       </div>
       <hr className="w-1/2" />
-      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-3">
-        {simpleprojects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+        {simpleprojects.map((sproject, index) => (
+          <ProjectCard key={index} {...sproject} />
         ))}
       </div>
       <hr />
