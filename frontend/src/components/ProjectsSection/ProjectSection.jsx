@@ -1,5 +1,6 @@
 import React from "react";
 import projects from "../projects";
+import simpleprojects from "../simpleprojects";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
 const ProjectSection = () => {
@@ -11,6 +12,13 @@ const ProjectSection = () => {
           <ProjectCard key={index} {...project} />
         ))}
       </div>
+      <hr className="w-1/2" />
+      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-3">
+        {simpleprojects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
+      </div>
+      <hr />
     </div>
   );
 };
