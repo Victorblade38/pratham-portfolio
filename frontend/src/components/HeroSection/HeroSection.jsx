@@ -20,10 +20,10 @@ const HeroSection = () => {
           <span className="w-[20%] bg-gray-50 p-2 text-[12px] md:text-sm lg:text-lg rounded-md hover:shadow-blue-300 shadow-md">
             --- hello
           </span>
-          <h1 className="bg-gray-50 p-4 text-2xl lg:text-4xl font-bold rounded-md hover:shadow-blue-300 shadow-md">
+          <h1 className="bg-gray-50 p-2 md:p-4 text-2xl lg:text-4xl font-bold rounded-md hover:shadow-blue-300 shadow-md">
             I am Pratham Mhavale
           </h1>
-          <p className="w-[55%] p-3 md:w-50% text-sm lg:text-xl font-semibold bg-gray-50 rounded-md hover:shadow-blue-300 shadow-md">
+          <p className="w-[60%] p-3 md:w-50% text-sm lg:text-xl font-semibold bg-gray-50 rounded-md hover:shadow-blue-300 shadow-md">
             Frontend Developer
           </p>
         </div>
