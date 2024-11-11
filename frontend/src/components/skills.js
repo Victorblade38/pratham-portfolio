@@ -8,6 +8,7 @@ import tailwindLogo from "../assets/tailwindCss.png";
 import gitLogo from "../assets/social.png";
 import githubLogo from "../assets/github.png";
 import nodeLogo from "../assets/node-js.png";
+import postmanLogo from "../assets/postmanapi.png";
 
 const skills = {
   html: { name: "HTML", img: htmlLogo },
@@ -17,6 +18,7 @@ const skills = {
   git: { name: "Git", img: gitLogo },
   github: { name: "GitHub", img: githubLogo },
   react: { name: "React", img: reactLogo },
+  postman: { name: "Postman", img: postmanLogo },
   node: { name: "Node.js", img: nodeLogo },
   figma: { name: "Figma", img: figmaLogo },
   python: { name: "Python", img: pythonLogo },
