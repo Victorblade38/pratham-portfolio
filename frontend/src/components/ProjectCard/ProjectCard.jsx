@@ -10,7 +10,7 @@ function ProjectCard({ name, about, completed, githubLink }) {
   }, [completed]);
   return (
     <div
-      className={`bg-gray-100 lg:w-96 flex flex-col p-4 gap-2  items-center text-sm  shadow-md lg:shadow-lg rounded-md
+      className={`bg-gray-50 lg:w-96 flex flex-col p-4 gap-2  items-center text-sm  shadow-md lg:shadow-lg rounded-md
       ${completed ? "shadow-green-200" : "shadow-orange-200"}  `}
       onClick={() => {
         window.open(githubLink, "_blank"); // Open the GitHub link in a new tab

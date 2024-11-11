@@ -6,12 +6,12 @@ const Navbar = () => {
   return (
     <div
       className="h-[60px] bg-white/30 backdrop-blur-lg p-2 md:p-10 shadow-sm
-    w-screen flex flex-row  justify-around items-center bg-gray-100"
+    w-screen flex flex-row  justify-around items-center bg-gray-50"
     >
       <NavLink to="/">
         <img src={person_icon} className="w-[30px] md:w-8" />
       </NavLink>
-      <div className="flex gap-4 text-[14px] md:text-lg ">
+      <div className="flex gap-4 text-[12px] md:text-base  ">
         <NavLink to="/" title="about section" className="">
           home
         </NavLink>

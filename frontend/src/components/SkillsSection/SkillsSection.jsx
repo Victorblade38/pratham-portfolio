@@ -5,10 +5,10 @@ const SkillsSection = () => {
   return (
     <div className="p-8 flex flex-col justify-center items-center gap-4 lg:mt-10">
       <h1 className="font-bold lg:text-2xl">Skills</h1>
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 lg:gap-4">
         {Object.keys(skills).map((key) => (
           <div
-            className="bg-gray-100 flex flex-col gap-2 px-3 py-4 lg:p-6 items-center shadow-sm lg:shadow-lg rounded-md"
+            className="bg-gray-50 flex flex-col gap-2 px-3 py-4 lg:p-6 items-center shadow-sm lg:shadow-lg shadow-blue-500 rounded-md"
             key={key}
           >
             <img
