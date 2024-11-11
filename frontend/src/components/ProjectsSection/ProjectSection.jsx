@@ -13,7 +13,7 @@ const ProjectSection = () => {
         ))}
       </div>
       <hr className="w-1/2" />
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-2 lg:grid-cols-3 ">
         {simpleprojects.map((sproject, index) => (
           <ProjectCard key={index} {...sproject} />
         ))}

@@ -12,6 +12,9 @@ const Navbar = () => {
         <img src={person_icon} className="w-[30px] md:w-8" />
       </NavLink>
       <div className="flex gap-4 text-[14px] md:text-lg ">
+        <NavLink to="/" title="about section" className="">
+          home
+        </NavLink>
         <NavLink to="/about" title="about section" className="">
           about
         </NavLink>

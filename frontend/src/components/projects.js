@@ -18,7 +18,7 @@ const projects = [
     githubLink: "https://github.com/Victorblade38/WeatherApp",
     about:
       "A simple and responsive weather application built with React, Vite, and Tailwind CSS, using the OpenWeather API to fetch real-time weather data.",
-    completed: false,
+    completed: true,
   },
   {
     name: "Frontend Projects",

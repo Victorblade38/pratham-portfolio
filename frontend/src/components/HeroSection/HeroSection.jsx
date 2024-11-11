@@ -18,7 +18,7 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col justify-center items-center mt-20">
       {/* <img src={bg} alt="Background" className="bg-img" /> */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 bg-gray-100 p-4 rounded-md shadow-md">
         <div className="flex flex-col gap-1">
           <span className="text-[12px] md:text-sm lg:text-lg">--- hello</span>
           <h1 className="text-3xl lg:text-5xl font-bold">
@@ -37,10 +37,6 @@ const HeroSection = () => {
               <span className="text-[16px] lg:text-lg font-medium">resume</span>
             </button>
           </a>
-          <div className="flex flex-row gap-4">
-            <img src={linkedin} alt="" className="w-6 h-6 " />
-            <img src={github} alt="" className="w-6 h-6 " />
-          </div>
         </div>
       </div>
     </div>

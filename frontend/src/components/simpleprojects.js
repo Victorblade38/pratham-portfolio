@@ -1,5 +1,23 @@
 const simpleprojects = [
   {
+    name: "Recipe page",
+    githubLink: "https://victorblade38.github.io/FrontendChallenge01/",
+    about: "A simple recipe page made with html css",
+    completed: true,
+  },
+  {
+    name: "Social links profile",
+    githubLink: "https://victorblade38.github.io/social-links-profile/",
+    about: "A social link sharing profile",
+    completed: true,
+  },
+  {
+    name: "FAQ accordion",
+    githubLink: "https://victorblade38.github.io/FAQ-accordion/",
+    about: "A FAQ accordion",
+    completed: true,
+  },
+  {
     name: "Single-Page CV",
     githubLink: "https://victorblade38.github.io/Html-Cv/",
     about: "A single-page HTML CV to showcase your career history",

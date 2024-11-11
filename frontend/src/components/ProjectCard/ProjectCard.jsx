@@ -10,21 +10,15 @@ function ProjectCard({ name, about, completed, githubLink }) {
   }, [completed]);
   return (
     <div
-      className="bg-gray-100 lg:w-96 flex flex-col p-4 gap-2  items-center text-sm shadow-md lg:shadow-lg rounded-md"
+      className={`bg-gray-100 lg:w-96 flex flex-col p-4 gap-2  items-center text-sm  shadow-md lg:shadow-lg rounded-md
+      ${completed ? "shadow-green-200" : "shadow-orange-200"}  `}
       onClick={() => {
         window.open(githubLink, "_blank"); // Open the GitHub link in a new tab
       }}
     >
-      <div className="flex flex-row gap-2 lg:gap-4 items-center ">
-        <span className="font-semibold lg:text-lg cursor-pointer hover:underline">
-          {name}
-        </span>
-        <span
-          className={`w-4 h-4 rounded-full ${
-            status ? "bg-green-500" : "bg-orange-400"
-          }`}
-        ></span>
-      </div>
+      <span className="font-semibold lg:text-lg cursor-pointer hover:underline">
+        {name}
+      </span>
       <p className="text-[12px] lg:text-sm">{about}</p>
     </div>
   );
