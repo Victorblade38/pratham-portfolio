@@ -1,14 +1,20 @@
 const simpleprojects = [
   {
+    name: "Blog preview card",
+    githubLink: "https://victorblade38.github.io/Blog-preview-card/",
+    about: "A simple blog preview card made with html tailwindcss",
+    completed: true,
+  },
+  {
     name: "Recipe page",
     githubLink: "https://victorblade38.github.io/FrontendChallenge01/",
-    about: "A simple recipe page made with html css",
+    about: "A simple recipe page made with html tailwindcss",
     completed: true,
   },
   {
     name: "Social links profile",
     githubLink: "https://victorblade38.github.io/social-links-profile/",
-    about: "A social link sharing profile",
+    about: "A social link sharing profile made with html tailwindcss",
     completed: true,
   },
   {
