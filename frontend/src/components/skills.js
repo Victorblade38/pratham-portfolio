@@ -9,6 +9,7 @@ import gitLogo from "../assets/social.png";
 import githubLogo from "../assets/github.png";
 import nodeLogo from "../assets/node-js.png";
 import postmanLogo from "../assets/postmanapi.png";
+import sqlLogo from "../assets/sql.png";
 
 const skills = {
   html: { name: "HTML", img: htmlLogo },
@@ -22,6 +23,7 @@ const skills = {
   node: { name: "Node.js", img: nodeLogo },
   figma: { name: "Figma", img: figmaLogo },
   python: { name: "Python", img: pythonLogo },
+  sql: { name: "SQL", img: sqlLogo },
 };
 
 export default skills;
