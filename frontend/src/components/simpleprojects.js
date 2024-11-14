@@ -1,5 +1,11 @@
 const simpleprojects = [
   {
+    name: "Result summary component",
+    githubLink: "https://victorblade38.github.io/result-summary-component/",
+    about: "A simple result summary component",
+    completed: true,
+  },
+  {
     name: "Blog preview card",
     githubLink: "https://victorblade38.github.io/Blog-preview-card/",
     about: "A simple blog preview card made with html tailwindcss",
