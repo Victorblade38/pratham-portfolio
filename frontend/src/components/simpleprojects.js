@@ -6,6 +6,13 @@ const simpleprojects = [
     completed: true,
   },
   {
+    name: "Product card component",
+    githubLink:
+      "https://github.com/Victorblade38/product-preview-card-component",
+    about: "A simple product card component",
+    completed: true,
+  },
+  {
     name: "Blog preview card",
     githubLink: "https://victorblade38.github.io/Blog-preview-card/",
     about: "A simple blog preview card made with html tailwindcss",
