@@ -14,6 +14,13 @@ const projects = [
     completed: false,
   },
   {
+    name: "Task Management App",
+    githubLink: "https://github.com/Victorblade38/Task-Manager_assignment",
+    about:
+      "A simple and efficient task management app built with React, JavaScript, and Tailwind CSS. The app allows you to add, delete, and search for tasks. Additionally, it includes a fun confetti animation using the Confetti library when marking tasks as completed.",
+    completed: true,
+  },
+  {
     name: "WeatherApp",
     githubLink: "https://github.com/Victorblade38/WeatherApp",
     about:
