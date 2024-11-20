@@ -9,11 +9,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Layout from "./Layout.jsx";
-import HeroSection from "./components/HeroSection/HeroSection.jsx";
-import AboutSection from "./components/AboutSection/AboutSection.jsx";
-import SkillsSection from "./components/SkillsSection/SkillsSection.jsx";
-import ProjectSection from "./components/ProjectsSection/ProjectSection.jsx";
-import ContactSection from "./components/ContactSection/ContactSection.jsx";
+import {
+  HeroSection,
+  AboutSection,
+  SkillsSection,
+  ProjectSection,
+  ContactSection,
+} from "./components.js";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

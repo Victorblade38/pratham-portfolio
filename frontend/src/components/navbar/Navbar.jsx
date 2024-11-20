@@ -5,13 +5,13 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div
-      className="h-[60px] bg-white/30 backdrop-blur-lg p-2 md:p-10 shadow-sm
-    w-screen flex flex-row  justify-around items-center bg-gray-50"
+      className="h-12 md:h-[60px] top-0 absolute z-20 bg-white/30 backdrop-blur-lg p-2 md:p-10 shadow-sm
+    w-screen flex flex-row  justify-around items-center "
     >
       <NavLink to="/">
-        <img src={person_icon} className="w-[30px] md:w-8" />
+        <img src={person_icon} className="w-[20px] md:w-8" />
       </NavLink>
-      <div className="flex gap-4 text-[12px] md:text-base  ">
+      <div className="flex gap-3 lg:gap-4 text-[12px] md:text-base  text-white">
         <NavLink to="/" title="about section" className="">
           home
         </NavLink>
