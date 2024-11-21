@@ -7,13 +7,6 @@ const projects = [
     completed: true,
   },
   {
-    name: "Infodaily",
-    githubLink: "https://github.com/Victorblade38/infodaily-react",
-    about:
-      "A news application using API integration to display news by category, language, and region. The project uses React Router for navigation and is fully responsive.",
-    completed: false,
-  },
-  {
     name: "Task Management App",
     githubLink: "https://github.com/Victorblade38/Task-Manager_assignment",
     about:
