@@ -43,7 +43,7 @@ const HeroSection = () => {
               <button
                 className={`resume-btn ${
                   clicked ? "clicked" : ""
-                } bg-gradient-to-tl from-blue-500 via-blue-400 to-blue-300  active:bg-white px-3 py-2  md:px-4 md:py-2 text-white rounded-md shadow-md`}
+                } bg-gradient-to-tl from-blue-500 via-blue-700 to-blue-900  active:bg-white px-3 py-2  md:px-4 md:py-2 text-white rounded-md shadow-md`}
                 onClick={handleClick}
               >
                 <span className="text-[12px] md:text-base font-bold active:text-black">
