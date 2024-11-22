@@ -1,5 +1,11 @@
 const simpleprojects = [
   {
+    name: "Interactive rating component",
+    githubLink: "https://victorblade38.github.io/interactive-rating-component/",
+    about: "A simple interactive rating component",
+    completed: true,
+  },
+  {
     name: "Result summary component",
     githubLink: "https://victorblade38.github.io/result-summary-component/",
     about: "A simple result summary component",
