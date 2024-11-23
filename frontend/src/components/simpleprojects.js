@@ -1,5 +1,11 @@
 const simpleprojects = [
   {
+    name: "NFT preview card component",
+    githubLink: "https://victorblade38.github.io/NFT-preview-card-component/",
+    about: "A simple NFT preview card component",
+    completed: true,
+  },
+  {
     name: "Interactive rating component",
     githubLink: "https://victorblade38.github.io/interactive-rating-component/",
     about: "A simple interactive rating component",
