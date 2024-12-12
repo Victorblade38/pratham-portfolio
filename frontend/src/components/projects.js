@@ -21,11 +21,10 @@ const projects = [
     completed: true,
   },
   {
-    name: "Frontend Projects",
-    githubLink: "https://github.com/Victorblade38/frontend-projects",
-    img: "",
+    name: "RecipeCardPage",
+    githubLink: "https://github.com/Victorblade38/recipecardpage",
     about:
-      "A collection of frontend projects demonstrating various web development challenges, showcasing my ability to apply different technologies.",
+      "A simple recipe page with multiple recipe card built with React Vite , TailwindCss.It features multiple recipes , user can add their own recipes , saved recipes the like , delete recipes and also change the theme of the website from dark to light mode",
     completed: false,
   },
 
