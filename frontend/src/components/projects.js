@@ -25,7 +25,7 @@ const projects = [
     githubLink: "https://github.com/Victorblade38/recipecardpage",
     about:
       "A simple recipe page with multiple recipe card built with React Vite , TailwindCss.It features multiple recipes , user can add their own recipes , saved recipes the like , delete recipes and also change the theme of the website from dark to light mode",
-    completed: false,
+    completed: true,
   },
 
   // Add more projects as needed...
