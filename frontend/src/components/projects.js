@@ -1,5 +1,19 @@
 const projects = [
   {
+    name: "WeatherApp",
+    githubLink: "https://github.com/Victorblade38/WeatherApp",
+    about:
+      "A simple and responsive weather application built with React, Vite, and Tailwind CSS, using the OpenWeather API to fetch real-time weather data.",
+    completed: true,
+  },
+  {
+    name: "RecipeCardPage",
+    githubLink: "https://github.com/Victorblade38/recipecardpage",
+    about:
+      "A simple recipe page with multiple recipe card built with React Vite , TailwindCss.It features multiple recipes , user can add their own recipes , saved recipes the like , delete recipes and also change the theme of the website from dark to light mode",
+    completed: true,
+  },
+  {
     name: "Tasks-to-do",
     githubLink: "https://github.com/Victorblade38/todo-vite-project",
     about:
@@ -14,17 +28,17 @@ const projects = [
     completed: true,
   },
   {
-    name: "WeatherApp",
-    githubLink: "https://github.com/Victorblade38/WeatherApp",
+    name: "Article Summarizer",
+    githubLink: "https://github.com/Victorblade38/ArticleSummarizer",
     about:
-      "A simple and responsive weather application built with React, Vite, and Tailwind CSS, using the OpenWeather API to fetch real-time weather data.",
+      "The Article Summarizer App is a web application designed to help users quickly extract the essence of any article by summarizing it. This app boasts a clean and minimalistic design while offering advanced functionality and seamless responsiveness across devices.",
     completed: true,
   },
   {
-    name: "RecipeCardPage",
-    githubLink: "https://github.com/Victorblade38/recipecardpage",
+    name: "React router demo",
+    githubLink: "https://github.com/Victorblade38/ReactRouter",
     about:
-      "A simple recipe page with multiple recipe card built with React Vite , TailwindCss.It features multiple recipes , user can add their own recipes , saved recipes the like , delete recipes and also change the theme of the website from dark to light mode",
+      "The React Router Demo App is a simple and elegant React application built to demonstrate the functionality of React Router. It features a clean and minimalistic design and smooth navigation between pages.",
     completed: true,
   },
 
