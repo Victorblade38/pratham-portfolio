@@ -1,6 +1,6 @@
 import React from "react";
-import skills from "../skills";
-import { bg } from "../../assets";
+import skills from "./skills";
+import { bg } from "../assets";
 import "animate.css";
 import TypeIt from "typeit-react";
 

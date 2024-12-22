@@ -1,5 +1,5 @@
 import React from "react";
-import { bg, personIll } from "../../assets";
+import { bg, personIll } from "../assets";
 import TypeIt from "typeit-react";
 
 const AboutSection = () => {
@@ -19,15 +19,17 @@ const AboutSection = () => {
 
         "
         >
-          <p className="md:w-[600px] lg:w-[800px] xl:w-[1000px] text-[12px] md:text-lg lg:text-xl lg:font-serif p-4 lg:font-bold drop-shadow-lg">
-            I'm Pratham Mhavale , frontend developer from Mumbai , India, with a
-            Bachelor's degree in Computer Science. I focus on creating visually
-            appealing and user-friendly web interfaces.
+          <p className="md:w-[600px] lg:w-[800px] xl:w-[1000px] text-[12px] md:text-lg lg:text-xl  p-4 lg:font-bold drop-shadow-lg">
+            I am an enthusiastic and detail-oriented front-end developer with
+            expertise in ReactJS, JavaScript, and Tailwind CSS. With a creative
+            mindset, I excel at transforming designs into fully functional,
+            responsive websites that offer an enhanced user experience.
             <br />
             <TypeIt options={{ speed: 30 }}>
-              Aside from coding , I’m either playing cricket or drawing. I’m
-              eager to learn and explore new opportunities in web development
-              and design.
+              I am adaptable, continuously learning and staying updated with new
+              technologies, and thrive in collaborative environments. Passionate
+              about web development, I focus on creating user-friendly and
+              visually appealing digital solutions.
               <br />
               ---
             </TypeIt>

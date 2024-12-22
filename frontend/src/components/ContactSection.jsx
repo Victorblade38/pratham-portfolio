@@ -1,5 +1,5 @@
 import React from "react";
-import { bg, linkedinLogo, githubLogo, gmail } from "../../assets";
+import { bg, linkedinLogo, githubLogo, gmail } from "../assets";
 import TypeIt from "typeit-react";
 
 const ContactSection = () => {

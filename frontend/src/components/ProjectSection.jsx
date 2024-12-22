@@ -1,8 +1,8 @@
 import React from "react";
-import projects from "../projects";
-import { bg } from "../../assets";
-import simpleprojects from "../simpleprojects";
-import ProjectCard from "../ProjectCard/ProjectCard";
+import projects from "./projects";
+import { bg } from "../assets";
+import simpleprojects from "./simpleprojects";
+import ProjectCard from "./ProjectCard";
 import TypeIt from "typeit-react";
 
 const ProjectSection = () => {

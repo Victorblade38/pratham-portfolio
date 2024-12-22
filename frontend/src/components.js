@@ -1,9 +1,9 @@
-import AboutSection from "./components/AboutSection/AboutSection";
-import ContactSection from "./components/ContactSection/ContactSection";
-import HeroSection from "./components/HeroSection/HeroSection";
-import SkillsSection from "./components/SkillsSection/SkillsSection";
-import ProjectSection from "./components/ProjectsSection/ProjectSection";
-import ProjectCard from "./components/ProjectCard/ProjectCard";
+import AboutSection from "./components/AboutSection";
+import ContactSection from "./components/ContactSection";
+import HeroSection from "./components/HeroSection";
+import SkillsSection from "./components/SkillsSection";
+import ProjectSection from "./components/ProjectSection";
+import ProjectCard from "./components/ProjectCard";
 
 export {
   AboutSection,

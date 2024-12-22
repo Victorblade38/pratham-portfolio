@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import "animate.css";
-import { bg, personIll, cv } from "../../assets";
+import { bg, personIll, cv } from "../assets";
 import TypeIt from "typeit-react";
 
 const HeroSection = () => {
