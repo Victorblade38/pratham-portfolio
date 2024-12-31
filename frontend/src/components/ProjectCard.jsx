@@ -17,7 +17,7 @@ function ProjectCard({
 
   return (
     <div
-      className={`bg-gray-100  min-w-32 max-w-96 flex flex-col p-3 gap-2 items-center
+      className={`bg-gray-100 h-full  min-w-full max-w-96 flex flex-col p-3 gap-2 items-center
       border-2 border-gray-400
       rounded-lg`}
       onClick={() => {
@@ -47,7 +47,7 @@ function ProjectCard({
       >
         {about}
       </p>
-      <div className="w-full mt-2 flex flex-row flex-wrap gap-2 justify-start">
+      <div className="mt-auto w-full flex flex-row flex-wrap gap-2 justify-start">
         {techStack?.map((tech, index) => (
           <div
             key={index}

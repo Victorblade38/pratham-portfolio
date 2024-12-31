@@ -20,7 +20,7 @@ const ProjectSection = () => {
       </h1>
       <div className="h-[520px] md:h-[820px] lg:h-[710px] flex flex-col gap-2 mt-4 px-4 overflow-y-scroll no-scrollbar">
         <div
-          className="flex flex-col gap-2 md:grid md:grid-cols-2 lg:grid-cols-3
+          className="flex flex-col items-center gap-2 md:grid md:grid-cols-2 lg:grid-cols-3
         animate__animated animate__fadeInUp animate__slow
         "
         >

@@ -10,6 +10,7 @@ import githubLogo from "../assets/github.png";
 import nodeLogo from "../assets/node-js.png";
 import postmanLogo from "../assets/postmanapi.png";
 import sqlLogo from "../assets/sql.png";
+import webflowLogo from "../assets/webflowLogo.png";
 
 const skills = {
   html: { name: "HTML", img: htmlLogo },
@@ -22,6 +23,7 @@ const skills = {
   postman: { name: "Postman", img: postmanLogo },
   node: { name: "Node.js", img: nodeLogo },
   figma: { name: "Figma", img: figmaLogo },
+  webflow: { name: "webflow", img: webflowLogo },
   python: { name: "Python", img: pythonLogo },
   sql: { name: "SQL", img: sqlLogo },
 };
