@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { CgProfile } from "react-icons/cg";
 
-function ProjectCard({ name, about, completed, githubLink }) {
+function ProjectCard({
+  name,
+  about,
+  completed,
+  githubLink,
+  techStack,
+  favicon,
+}) {
   const [status, setStatus] = useState();
 
   useEffect(() => {
@@ -9,17 +17,46 @@ function ProjectCard({ name, about, completed, githubLink }) {
 
   return (
     <div
-      className={`bg-gray-50  md:w-72 xl:w-96 flex flex-col p-4 gap-2 items-center
+      className={`bg-gray-100  min-w-32 max-w-96 flex flex-col p-3 gap-2 items-center
       shadow-md ${status ? "shadow-green-300 " : "shadow-orange-300"}
-      rounded-xl lg:rounded-md`}
+      rounded-lg`}
       onClick={() => {
         window.open(githubLink, "_blank"); // Open the GitHub link in a new tab
       }}
     >
-      <span className="font-semibold text-[12px] lg:text-lg cursor-pointer hover:underline">
-        {name}
-      </span>
-      <p className="text-[10px] lg:text-sm">{about}</p>
+      <div className="w-full flex flex-row gap-2 items-center">
+        <div className="bg-gray-50 p-[6px] rounded-full border-[0.2px] border-gray-300">
+          {favicon ? (
+            <img src={favicon} alt="icon" className="w-5 h-5 rounded-full" />
+          ) : (
+            <CgProfile />
+          )}
+        </div>
+        {name ? (
+          <span className="font-semibold text-[13px] lg:text-lg cursor-pointer hover:underline">
+            {name}
+          </span>
+        ) : (
+          ""
+        )}
+      </div>
+      <p
+        className={`w-full text-[12px] lg:text-sm line-clamp-4 ${
+          about.length === 0 ? "hidden" : ""
+        }`}
+      >
+        {about}
+      </p>
+      <div className="w-full mt-2 flex flex-row flex-wrap gap-2 justify-start">
+        {techStack?.map((tech, index) => (
+          <div
+            key={index}
+            className="py-1 px-2 bg-gray-200 border-[0.2px] border-gray-300 rounded-full"
+          >
+            <p className="text-[10px]">{tech}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

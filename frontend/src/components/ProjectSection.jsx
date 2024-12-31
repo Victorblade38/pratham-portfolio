@@ -28,9 +28,9 @@ const ProjectSection = () => {
             <ProjectCard key={index} {...project} />
           ))}
         </div>
-        <hr className="lg:w-1/2 animate__animated animate__fadeInLeft animate__slower text-white" />
+
         <div
-          className="grid grid-cols-2 gap-2 lg:grid-cols-3 
+          className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-3
         animate__animated animate__fadeInUp animate__slow"
         >
           {simpleprojects.map((sproject, index) => (
@@ -38,7 +38,6 @@ const ProjectSection = () => {
           ))}
         </div>
       </div>
-      <hr />
     </div>
   );
 };
