@@ -18,7 +18,7 @@ function ProjectCard({
   return (
     <div
       className={`bg-gray-100  min-w-32 max-w-96 flex flex-col p-3 gap-2 items-center
-      shadow-md ${status ? "shadow-green-300 " : "shadow-orange-300"}
+      border-2 border-gray-400
       rounded-lg`}
       onClick={() => {
         window.open(githubLink, "_blank"); // Open the GitHub link in a new tab
