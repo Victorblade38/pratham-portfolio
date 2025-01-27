@@ -1,52 +1,51 @@
 import React from "react";
 import { personIcon } from "../assets";
-import { NavLink } from "react-router-dom";
-
+import { Link } from "react-scroll";
 const Navbar = () => {
   return (
     <div
-      className="h-12 md:h-[60px] top-0 absolute z-20 bg-white/10 backdrop-blur-md  p-2 md:p-10 shadow-sm
-    w-screen flex flex-row  justify-around items-center "
+      className="border-[1px] border-gray-800 xl:mt-2 max-w-[1440px]  h-16 md:h-20 xl:h-24 top-0 fixed z-20 bg-white/100 backdrop-blur-md  px-[10px] md:px-10 shadow-sm
+
+    w-screen flex flex-row  justify-between items-center font-inter xl:rounded-xl"
     >
-      <NavLink to="/">
-        <img src={personIcon} className="w-[20px] md:w-8" />
-      </NavLink>
-      <div className="flex gap-3 lg:gap-4 text-[12px] md:text-base  text-gray-400 ">
-        <NavLink
-          to="/"
-          title="home"
-          className="hover:text-white transition-all ease-in-out duration-300"
-        >
-          home
-        </NavLink>
-        <NavLink
-          to="/about"
+      <Link to="hero" duration={400}>
+        <p className="ml-4 text-base md:text-xl font-medium xl:font-semibold">
+          PRT-PH2
+        </p>
+      </Link>
+      <div className="mr-2 flex gap-3 lg:gap-4 text-[12px] md:text-base xl:text-lg  ">
+        <Link
+          to="about"
           title="about section"
-          className="hover:text-white transition-all ease-in-out duration-300"
+          duration={400}
+          className=" transition-all ease-in-out duration-300"
         >
           about
-        </NavLink>
-        <NavLink
-          to="/skills"
+        </Link>
+        <Link
+          to="skills"
           title="skills section"
-          className="hover:text-white transition-all ease-in-out duration-300"
+          duration={400}
+          className=" transition-all ease-in-out duration-300"
         >
           skills
-        </NavLink>
-        <NavLink
-          to="/projects"
+        </Link>
+        <Link
+          to="projects"
           title="projects section"
-          className="hover:text-white transition-all ease-in-out duration-300"
+          duration={400}
+          className=" transition-all ease-in-out duration-300"
         >
           project
-        </NavLink>
-        <NavLink
-          to="/contact"
+        </Link>
+        <Link
+          to="contact"
           title="contact section"
-          className="hover:text-white transition-all ease-in-out duration-300"
+          duration={400}
+          className=" transition-all ease-in-out duration-300"
         >
           contact
-        </NavLink>
+        </Link>
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,6 +9,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.font-inter {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
 }
 
 @layer utilities {

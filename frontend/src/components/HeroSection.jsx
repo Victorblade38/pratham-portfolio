@@ -1,62 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 
-import "animate.css";
-import { bg, personIll, cv } from "../assets";
-import TypeIt from "typeit-react";
+import { cv } from "../assets";
 
 const HeroSection = () => {
-  const [clicked, setClicked] = useState(false);
-
-  const handleClick = () => {
-    setClicked(true);
-
-    setTimeout(() => {
-      setClicked(false);
-    }, 300);
-  };
-
   return (
-    <div className="min-h-screen min-w-screen flex flex-col items-center relative overflow-clip">
-      <img
-        src={bg}
-        alt="Background"
-        className="h-screen w-screen object-cover absolute -z-10 "
-      />
-      <div
-        className=" md:w-[650px] lg:w-[900px] xl:w-[1100px] md::bg-white/10 md:backdrop-blur-md flex flex-col md:flex-row gap-10 justify-center items-center mt-40 lg:mt-30 xl:mt-40 md:py-10 md:px-10 lg:py-8 lg:px-8 xl:px-20
-       rounded-3xl md:shadow-lg"
-      >
-        <div className="flex flex-col items-start gap-2 lg:gap-4 text-white ">
-          <div className="flex flex-col  md:gap-2">
-            <span className="w-60 text-[12px] md:text-sm lg:text-lg rounded-md ">
-              <TypeIt options={{ speed: 60 }}>- - heyyy 👋 i am</TypeIt>
-            </span>
-            <h1 className=" text-3xl lg:text-3xl xl:text-5xl font-extrabold drop-shadow-md rounded-md ">
-              <TypeIt options={{ speed: 100 }}>Pratham Mhavale</TypeIt>
-            </h1>
-            <p className="text-lg lg:text-xl xl:text-2xl font-bold drop-shadow-md  rounded-md ">
-              <TypeIt options={{ speed: 100 }}>Frontend Developer</TypeIt>
-            </p>
-          </div>
-          <div className="flex flex-row items-start">
-            <a href={cv} download>
-              <button
-                className={`resume-btn ${
-                  clicked ? "clicked" : ""
-                } bg-gradient-to-tl from-blue-500 via-blue-700 to-blue-900  active:bg-white px-3 py-2  md:px-4 md:py-2 text-white rounded-md shadow-md`}
-                onClick={handleClick}
-              >
-                <span className="text-[12px] md:text-base font-bold active:text-black">
-                  Resume
-                </span>
-              </button>
-            </a>
-          </div>
-        </div>
-        <img
-          src={personIll}
-          className="animate__animated animate__fadeInDown w-60 lg:w-96 lg:h-96 drop-shadow-lg"
-        />
+    <div className="xl:w-[1440px] mx-[24px] md:mx-[34px] py-24   flex flex-col items-center ">
+      <div className=" md:w-[650px] lg:w-[900px] xl:w-[1200px]  flex flex-col gap-4  justify-center md:items-center mt-40 ">
+        <h1 className="text-[34px] md:text-center lg:text-4xl xl:text-6xl   rounded-md ">
+          Designing experiences and building Interfaces as a{" "}
+          <span className="text-blue-600 ">Front-end Developer</span> & Aspiring{" "}
+          <span className="text-blue-600 ">UI/UX Designer</span> .
+        </h1>
+        <a href={cv} download className="xl:mt-2">
+          <motion.button
+            whileTap={{ y: 4, boxShadow: "none" }} // Moves down and removes shadow on click
+            className="font-inter text-sm xl:text-lg  font-medium bg-white text-black px-[80px] xl:px-[120px] py-[10px] md:py-[12px] border-[2px] border-gray-900 rounded-sm shadow-[4px_4px_0px_black] transition-all"
+          >
+            Resume
+          </motion.button>
+        </a>
       </div>
     </div>
   );
