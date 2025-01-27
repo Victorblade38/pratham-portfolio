@@ -7,7 +7,7 @@ const ProjectSection = () => {
   return (
     <div
       id="projects"
-      className="xl:w-[1440px] border-2 border-gray-500 py-10 flex flex-col items-center  gap-8  xl:gap-14 rounded-md"
+      className="xl:w-[1440px] border-[1px] border-gray-500 py-10 flex flex-col items-center  gap-8  xl:gap-14 rounded-md"
     >
       <h1 className="mt-10  font-montserrat font-bold text-2xl">Projects</h1>
 
