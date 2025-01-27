@@ -8,7 +8,7 @@ const AboutSection = ({ id }) => {
       className="border-[1px] border-gray-500 max-w-[1440px] mt-10 flex flex-col lg:flex-row xl:items-center  gap-8 px-[24px] md:px-[34px] xl:px-[160px] py-20 w-full h-auto bg-white xl:rounded-lg "
     >
       <div className=" grid grid-flow-col md:grid-cols-4 md:w-1/3 lg:grid-cols-2 lg:grid-rows-2  gap-1 ">
-        <h1 className=" w-[100px] md:w-auto lg:w-[100px] text-[28px] md:text-5xl ml-2 md:ml-0  xl:mt-2  font-montserrat font-bold ">
+        <h1 className=" w-[100px] md:w-auto lg:w-[100px] text-[28px] md:text-5xl  xl:mt-2  font-montserrat font-bold ">
           About Me
         </h1>
         <img
