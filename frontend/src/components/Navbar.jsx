@@ -9,7 +9,7 @@ const Navbar = () => {
     w-screen flex flex-row  justify-between items-center font-inter xl:rounded-xl"
     >
       <Link to="hero" duration={400}>
-        <p className="ml-4 text-base md:text-xl font-medium xl:font-semibold">
+        <p className="ml-3 text-base md:text-xl font-medium xl:font-semibold">
           PRT-PH2
         </p>
       </Link>

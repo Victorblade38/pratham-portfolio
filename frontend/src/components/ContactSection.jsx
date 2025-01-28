@@ -14,7 +14,7 @@ const ContactSection = () => {
           className="flex flex-row gap-2 items-center justify-center"
         >
           <img src={gmail} alt="Gmail" className="w-5 xl:w-6 h-auto" />
-          <p className="text-sm xl:text-lg font-inter font-semibold">
+          <p className="hidden md:flex text-sm xl:text-lg font-inter font-semibold">
             prathammhavale38
           </p>
         </a>
@@ -30,7 +30,7 @@ const ContactSection = () => {
             alt="LinkedIn"
             className="w-5 xl:w-6 h-auto"
           />
-          <p className="text-sm xl:text-lg font-inter font-semibold">
+          <p className="hidden md:flex text-sm xl:text-lg font-inter font-semibold">
             pratham-mhavale
           </p>
         </a>
@@ -42,7 +42,7 @@ const ContactSection = () => {
           className="flex flex-row gap-2 items-center justify-center"
         >
           <img src={githubLogo} alt="GitHub" className="w-5 xl:w-6 h-auto" />
-          <p className="text-sm xl:text-lg font-inter font-semibold">
+          <p className="hidden md:flex text-sm xl:text-lg font-inter font-semibold">
             prathammhavale
           </p>
         </a>
