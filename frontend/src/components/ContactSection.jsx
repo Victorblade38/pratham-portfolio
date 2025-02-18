@@ -13,7 +13,12 @@ const ContactSection = () => {
           href="mailto:prathammhavale38@gmail.com"
           className="flex flex-row gap-2 items-center justify-center"
         >
-          <img src={gmail} alt="Gmail" className="w-5 xl:w-6 h-auto" />
+          <img
+            src={gmail}
+            alt="Gmail"
+            loading="lazy"
+            className="w-5 xl:w-6 h-auto"
+          />
           <p className="hidden md:flex text-sm xl:text-lg font-inter font-semibold">
             prathammhavale38
           </p>
@@ -27,6 +32,7 @@ const ContactSection = () => {
         >
           <img
             src={linkedinLogo}
+            loading="lazy"
             alt="LinkedIn"
             className="w-5 xl:w-6 h-auto"
           />
@@ -41,7 +47,12 @@ const ContactSection = () => {
           rel="noopener noreferrer"
           className="flex flex-row gap-2 items-center justify-center"
         >
-          <img src={githubLogo} alt="GitHub" className="w-5 xl:w-6 h-auto" />
+          <img
+            src={githubLogo}
+            alt="GitHub"
+            loading="lazy"
+            className="w-5 xl:w-6 h-auto"
+          />
           <p className="hidden md:flex text-sm xl:text-lg font-inter font-semibold">
             prathammhavale
           </p>

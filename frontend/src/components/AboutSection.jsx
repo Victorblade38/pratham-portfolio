@@ -13,16 +13,19 @@ const AboutSection = ({ id }) => {
         </h1>
         <img
           src={fast}
+          loading="lazy"
           alt=""
           className="object-cover w-[100px] md:w-full h-[140px] xl:h-[200px] rounded-md"
         />
         <img
           src={vision}
+          loading="lazy"
           alt=""
           className="object-cover w-[100px] md:w-full h-[140px] xl:h-full rounded-md"
         />
         <img
           src={innovation}
+          loading="lazy"
           alt=""
           className="object-cover w-[100px] md:w-full h-[140px] xl:h-full rounded-md"
         />

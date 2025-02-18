@@ -24,6 +24,7 @@ function ProjectCard({
       {favicon ? (
         <img
           src={favicon}
+          loading="lazy"
           alt="icon"
           className="w-8 lg:w-10 h-auto lg:mb-auto"
         />

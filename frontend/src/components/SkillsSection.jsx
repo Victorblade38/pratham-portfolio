@@ -39,6 +39,7 @@ const SkillsSection = () => {
           >
             <img
               src={item.icon}
+              loading="lazy"
               className="w-8 xl:w-12 xl:mb-10 drop-shadow-md"
             />
             <h2 className=" font-montserrat text-[14px] xl:text-2xl md:text-base font-semibold">
@@ -62,6 +63,7 @@ const SkillsSection = () => {
             <img
               src={skill.img}
               alt={skill.name}
+              loading="lazy"
               className="xl:mb-2 w-4 md:w-5 lg:w-8 hover:scale-110 transition-scale duration-500 ease-in-out"
             />
             <span className="text-[10px] md:text-sm lg:text-base font-inter font-medium transition-none">

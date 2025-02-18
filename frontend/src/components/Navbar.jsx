@@ -18,7 +18,7 @@ const Navbar = () => {
           to="about"
           title="about section"
           duration={400}
-          className=" transition-all ease-in-out duration-300"
+          className=" transition-all ease-in-out duration-300 cursor-pointer"
         >
           about
         </Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
           to="skills"
           title="skills section"
           duration={400}
-          className=" transition-all ease-in-out duration-300"
+          className=" transition-all ease-in-out duration-300 cursor-pointer"
         >
           skills
         </Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
           to="projects"
           title="projects section"
           duration={400}
-          className=" transition-all ease-in-out duration-300"
+          className=" transition-all ease-in-out duration-300 cursor-pointer"
         >
           project
         </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
           to="contact"
           title="contact section"
           duration={400}
-          className=" transition-all ease-in-out duration-300"
+          className=" transition-all ease-in-out duration-300 cursor-pointer"
         >
           contact
         </Link>
