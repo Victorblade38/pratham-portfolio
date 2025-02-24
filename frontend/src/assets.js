@@ -1,5 +1,5 @@
 import personIcon from "./assets/boyIcon.png";
-import cv from "./assets/Pratham_Mhavale_Frontend_Web_Developer_Resume.pdf";
+import cv from "./assets/PrathamMhavaleCVn.pdf";
 import linkedinLogo from "./assets/linkedin.png";
 import githubLogo from "./assets/github.png";
 import gmail from "./assets/gmail.png";
