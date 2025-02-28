@@ -131,7 +131,7 @@ const ContactSection = () => {
       </form>
 
       {status && (
-        <p className="text-center text-sm xl:text-lg text-green-600 mt-2">
+        <p className="text-center text-sm xl:text-lg text-gray-600 mt-2">
           {status}
         </p>
       )}
