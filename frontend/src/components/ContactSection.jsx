@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { linkedinLogo, githubLogo, gmail } from "../assets";
 
 const ContactSection = () => {
-  const formSpreeLink = import.meta.env.VITE_FORMSPREE_LINK;
+  const formSpreeLink = import.meta.env.VITE_FORMSPREE_LINK; // Replace with your Formspree link
+  const [status, setStatus] = useState("");
+  const [submissionCount, setSubmissionCount] = useState(0);
+
+  useEffect(() => {
+    const savedCount = localStorage.getItem("submissionCount");
+    if (savedCount) {
+      setSubmissionCount(parseInt(savedCount, 10));
+    }
+  }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (submissionCount >= 5) return;
+
+    const formData = new FormData(e.target);
+
+    const response = await fetch(formSpreeLink, {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      const newCount = submissionCount + 1;
+      setSubmissionCount(newCount);
+      localStorage.setItem("submissionCount", newCount);
+      setStatus("Message sent successfully!");
+      e.target.reset();
+    } else {
+      setStatus("Failed to send message. Please try again.");
+    }
+  };
+
   return (
     <div
       id="contact"
@@ -61,10 +95,11 @@ const ContactSection = () => {
       </div>
 
       <form
-        action={formSpreeLink}
+        onSubmit={handleSubmit}
         method="POST"
         className="my-10 mx-[24px] md:mx-[34px] flex flex-wrap md:grid md:grid-cols-2 gap-4"
       >
+        <p className="text-gray-500 text-[14px]">Submission limit 5</p>
         <input
           type="text"
           name="name"
@@ -85,11 +120,27 @@ const ContactSection = () => {
         ></textarea>
         <button
           type="submit"
-          className="w-full md:w-1/2 md:h-1/2 md:mt-auto bg-gray-800 text-white px-4 py-3 text-sm xl:text-lg font-medium font-montserrat rounded-md"
+          disabled={submissionCount >= 5}
+          className={`w-full md:w-1/2 md:h-1/2 md:mt-auto px-4 py-3 text-sm xl:text-lg font-medium font-montserrat rounded-md ${
+            submissionCount >= 5
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-gray-800 text-white"
+          }`}
         >
-          Send
+          {submissionCount >= 5 ? "Limit Reached" : "Send"}
         </button>
       </form>
+
+      {status && (
+        <p className="text-center text-sm xl:text-lg text-green-600 mt-2">
+          {status}
+        </p>
+      )}
+      {submissionCount >= 5 && (
+        <p className="text-center text-red-500 mt-2">
+          You've reached the submission limit.
+        </p>
+      )}
     </div>
   );
 };
