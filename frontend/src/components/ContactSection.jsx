@@ -6,12 +6,18 @@ const ContactSection = () => {
   const [status, setStatus] = useState("");
   const [submissionCount, setSubmissionCount] = useState(0);
 
+  // Load count from localStorage on mount
   useEffect(() => {
     const savedCount = localStorage.getItem("submissionCount");
     if (savedCount) {
       setSubmissionCount(parseInt(savedCount, 10));
     }
   }, []);
+
+  // Update localStorage whenever submissionCount changes
+  useEffect(() => {
+    localStorage.setItem("submissionCount", submissionCount);
+  }, [submissionCount]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,9 +33,7 @@ const ContactSection = () => {
     });
 
     if (response.ok) {
-      const newCount = submissionCount + 1;
-      setSubmissionCount(newCount);
-      localStorage.setItem("submissionCount", newCount);
+      setSubmissionCount((prev) => prev + 1);
       setStatus("Message sent successfully!");
       e.target.reset();
     } else {
@@ -120,7 +124,7 @@ const ContactSection = () => {
         <button
           type="submit"
           disabled={submissionCount >= 5}
-          className={`w-full md:w-1/2 md:h-1/2 md:mt-auto px-4 py-3 text-sm xl:text-lg font-medium font-montserrat rounded-md ${
+          className={`w-full md:mt-auto px-4 py-3 text-sm xl:text-lg font-medium font-montserrat rounded-md ${
             submissionCount >= 5
               ? "bg-gray-400 cursor-not-allowed"
               : "bg-gray-800 text-white"
