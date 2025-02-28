@@ -93,30 +93,29 @@ const ContactSection = () => {
           </p>
         </a>
       </div>
-
+      <p className="text-gray-500 text-[14px]">Submission limit 5</p>
       <form
         onSubmit={handleSubmit}
         method="POST"
-        className="my-10 mx-[24px] md:mx-[34px] flex flex-wrap md:grid md:grid-cols-2 gap-4"
+        className="my-8 mx-[24px] md:mx-[34px] flex flex-wrap md:grid md:grid-cols-2 gap-4"
       >
-        <p className="text-gray-500 text-[14px]">Submission limit 5</p>
         <input
           type="text"
           name="name"
           placeholder="name"
-          className="w-full  px-4 py-3 text-sm xl:text-lg font-inter rounded-md shadow-md"
+          className="w-full  px-4 py-2 text-sm xl:text-lg font-inter rounded-md shadow-md"
         />
         <input
           type="email"
           name="email"
           placeholder="email"
-          className="w-full  px-4 py-3 text-sm xl:text-lg font-inter rounded-md shadow-md"
+          className="w-full  px-4 py-2 text-sm xl:text-lg font-inter rounded-md shadow-md"
         />
         <textarea
           rows={4}
           name="message"
           placeholder="message"
-          className="w-full  px-4 py-3 text-sm xl:text-lg font-inter rounded-md shadow-md"
+          className="w-full  px-4 py-2 text-sm xl:text-lg font-inter rounded-md shadow-md"
         ></textarea>
         <button
           type="submit"
