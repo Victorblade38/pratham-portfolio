@@ -67,16 +67,19 @@ const ContactSection = () => {
       >
         <input
           type="text"
+          name="name"
           placeholder="name"
           className="w-full  px-4 py-3 text-sm xl:text-lg font-inter rounded-md shadow-md"
         />
         <input
           type="email"
+          name="email"
           placeholder="email"
           className="w-full  px-4 py-3 text-sm xl:text-lg font-inter rounded-md shadow-md"
         />
         <textarea
           rows={4}
+          name="message"
           placeholder="message"
           className="w-full  px-4 py-3 text-sm xl:text-lg font-inter rounded-md shadow-md"
         ></textarea>
@@ -84,7 +87,7 @@ const ContactSection = () => {
           type="submit"
           className="w-full md:w-1/2 md:h-1/2 md:mt-auto bg-gray-800 text-white px-4 py-3 text-sm xl:text-lg font-medium font-montserrat rounded-md"
         >
-          send
+          Send
         </button>
       </form>
     </div>
