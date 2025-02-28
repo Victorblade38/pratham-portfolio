@@ -2,6 +2,7 @@ import React from "react";
 import { linkedinLogo, githubLogo, gmail } from "../assets";
 
 const ContactSection = () => {
+  const formSpreeLink = import.meta.env.VITE_FORMSPREE_LINK;
   return (
     <div
       id="contact"
@@ -59,7 +60,11 @@ const ContactSection = () => {
         </a>
       </div>
 
-      <div className="my-10 mx-[24px] md:mx-[34px] flex flex-wrap md:grid md:grid-cols-2 gap-4">
+      <form
+        action={formSpreeLink}
+        method="POST"
+        className="my-10 mx-[24px] md:mx-[34px] flex flex-wrap md:grid md:grid-cols-2 gap-4"
+      >
         <input
           type="text"
           placeholder="name"
@@ -75,10 +80,13 @@ const ContactSection = () => {
           placeholder="message"
           className="w-full  px-4 py-3 text-sm xl:text-lg font-inter rounded-md shadow-md"
         ></textarea>
-        <button className="w-full md:w-1/2 md:h-1/2 md:mt-auto bg-gray-800 text-white px-4 py-3 text-sm xl:text-lg font-medium font-montserrat rounded-md">
+        <button
+          type="submit"
+          className="w-full md:w-1/2 md:h-1/2 md:mt-auto bg-gray-800 text-white px-4 py-3 text-sm xl:text-lg font-medium font-montserrat rounded-md"
+        >
           send
         </button>
-      </div>
+      </form>
     </div>
   );
 };
