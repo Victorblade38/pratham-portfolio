@@ -12,14 +12,14 @@ const projects = [
     favicon: "https://weather-app-phi-six-88.vercel.app/image.png",
   },
   {
-    name: "RecipeCardPage",
+    name: "FlavourDeck",
     githubLink: "https://github.com/Victorblade38/recipecardpage",
-    liveLink: "https://recipecardpage.vercel.app/",
+    liveLink: "https://flavourdecks.vercel.app/deck.png",
     about:
-      "A simple recipe page with multiple recipe card built with React Vite , TailwindCss.It features multiple recipes , user can add their own recipes , saved recipes the like , delete recipes and also change the theme of the website from dark to light mode",
+      "Platform for food lovers! Discover mouthwatering recipes from diverse cuisines, follow easy step-by-step instructions, and save your favorites for later. Want to share your own creations? Upload your recipes and inspire others with your culinary skills!",
     completed: true,
     techStack: ["Reactjs", "TailwindCss"],
-    favicon: "https://recipecardpage.vercel.app/book.png",
+    favicon: "https://flavourdecks.vercel.app/deck.png",
   },
   {
     name: "Tasks-to-do",
@@ -31,16 +31,7 @@ const projects = [
     techStack: ["Reactjs", "TailwindCss"],
     favicon: "https://todo-vite-project.vercel.app/post-it.png",
   },
-  {
-    name: "Task Manager",
-    githubLink: "https://github.com/Victorblade38/Task-Manager_assignment",
-    liveLink: "https://task-manager-assignment-lyart.vercel.app/",
-    about:
-      "A simple and efficient task management app built with React, JavaScript, and Tailwind CSS. The app allows you to add, delete, and search for tasks.",
-    completed: true,
-    techStack: ["Reactjs", "TailwindCss"],
-    favicon: "https://task-manager-assignment-lyart.vercel.app/checklist.png",
-  },
+
   // {
   //   name: "React router demo",
   //   githubLink: "https://github.com/Victorblade38/ReactRouter",
