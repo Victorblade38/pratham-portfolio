@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { cv } from "../assets";
+import resumeButton from "./resumeButton";
 
 const HeroSection = () => {
   return (
@@ -11,14 +11,7 @@ const HeroSection = () => {
           <span className="text-blue-600 ">Front-end Developer</span> & Aspiring{" "}
           <span className="text-blue-600 ">UI/UX Designer</span> .
         </h1>
-        <a href={cv} download className="xl:mt-2">
-          <motion.button
-            whileTap={{ y: 4, boxShadow: "none" }} // Moves down and removes shadow on click
-            className="font-inter text-sm xl:text-lg  font-medium bg-white text-black px-[80px] xl:px-[120px] py-[10px] md:py-[12px] border-[2px] border-gray-900 rounded-sm shadow-[4px_4px_0px_black] transition-all"
-          >
-            Resume
-          </motion.button>
-        </a>
+         <resumeButton/>
       </div>
     </div>
   );
