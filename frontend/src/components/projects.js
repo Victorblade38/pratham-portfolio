@@ -2,48 +2,38 @@ import React from "react";
 
 const projects = [
   {
-    name: "WeatherApp",
-    githubLink: "https://github.com/Victorblade38/WeatherApp",
-    liveLink: "https://weather-app-phi-six-88.vercel.app/",
+    name: "ICBA Co-op — Landing Page",
+    githubLink: "",
+    liveLink:
+      "https://www.figma.com/proto/iqRjdYfKmCmtA7gcV51b1W/IceBack-Landing-Page-%E2%80%93-Pratham-Mhavale?page-id=2%3A3&node-id=115-1726&viewport=450%2C152%2C0.08&t=44OwSvfDa86PlFOf-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=115%3A1726&show-proto-sidebar=1",
     about:
-      "A simple and responsive weather application built with React, Vite, and Tailwind CSS, using the OpenWeather API to fetch real-time weather data.",
+      "Redesigned the homepage for ICBA.coop to enhance clarity, accessibility, and user trust. Focused on information hierarchy, responsive layout, and brand consistency.",
     completed: true,
-    techStack: ["Reactjs", "TailwindCss", "API"],
-    favicon: "https://weather-app-phi-six-88.vercel.app/image.png",
+    techStack: ["Trust-Centric Design", "Structured Layout", "Accessible UX"],
+    favicon: "",
   },
   {
-    name: "FlavourDeck",
-    githubLink: "https://github.com/Victorblade38/recipecardpage",
-    liveLink: "https://flavourdecks.vercel.app/deck.png",
+    name: "Iceback — Landing Page",
+    githubLink: "",
+    liveLink:
+      "https://www.figma.com/proto/1XwXMHuOYdXCtKpTv2lw6Z/ICBA_Redesign_PrathamMhavale?page-id=1%3A4&node-id=13-636&viewport=-1275%2C778%2C0.25&t=djVoAEnkmq3rDIYP-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=13%3A636&show-proto-sidebar=1",
     about:
-      "Platform for food lovers! Discover mouthwatering recipes from diverse cuisines, follow easy step-by-step instructions, and save your favorites for later. Want to share your own creations? Upload your recipes and inspire others with your culinary skills!",
+      "Designed a modern, animated landing page for a fictional Mastercard concept. Focused on visual appeal, brand storytelling, and smooth micro-interactions. ",
     completed: true,
-    techStack: ["Reactjs", "TailwindCss"],
-    favicon: "https://flavourdecks.vercel.app/deck.png",
+    techStack: ["Interaction", "Animation", "Bold Typography"],
+    favicon: "",
   },
   {
-    name: "Tasks-to-do",
-    githubLink: "https://github.com/Victorblade38/todo-vite-project",
-    liveLink: "https://todo-vite-project.vercel.app/",
+    name: "Trekking — Landing Page",
+    githubLink: "",
+    liveLink:
+      "https://www.figma.com/proto/Ckd3Iij63zRBIC3AQxO54s/Trekking_LandingPage_PrathamMhavale?page-id=12%3A3&node-id=2110-145&viewport=-2528%2C-1896%2C0.17&t=6h4HsBgWzmO5Le2B-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2110%3A145",
     about:
-      "A task management app built with React and Vite, styled using Tailwind CSS. It features local storage to persist tasks across sessions, a motivational quotes API, and a stopwatch for time management.",
+      "Crafted a clean, minimalistic landing page for a trekking and outdoor experience brand. Prioritized whitespace, high-contrast typography, and visual hierarchy for clarity.",
     completed: true,
-    techStack: ["Reactjs", "TailwindCss"],
-    favicon: "https://todo-vite-project.vercel.app/post-it.png",
+    techStack: ["Clean Layout", "High Contrast", "Visual Hierarchy"],
+    favicon: "",
   },
-
-  // {
-  //   name: "React router demo",
-  //   githubLink: "https://github.com/Victorblade38/ReactRouter",
-  //   liveLink: "https://react-router-five-rho.vercel.app/",
-  //   about:
-  //     "The React Router Demo App is a simple and elegant React application built to demonstrate the functionality of React Router. It features a clean and minimalistic design and smooth navigation between pages.",
-  //   completed: true,
-  //   techStack: ["Reactjs", "TailwindCss", "React Router"],
-  //   favicon: "https://react-router-five-rho.vercel.app/like.png",
-  // },
-
-  // Add more projects as needed...
 ];
 
 export default projects;

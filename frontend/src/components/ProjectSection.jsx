@@ -5,17 +5,13 @@ import ProjectCard from "./ProjectCard";
 
 const ProjectSection = () => {
   return (
-    <div
-      id="projects"
-      className="xl:w-[1440px] border-[1px] border-gray-500 py-10 flex flex-col items-center  gap-8  xl:gap-14 rounded-md"
-    >
-      <h1 className="mt-10  font-montserrat font-bold text-2xl">Projects</h1>
+    <div id="projects" className="w-screen min-h-screen flex flex-col gap-10">
+      <div className="w-full h-[1px] bg-gray-600"></div>
+      <h1 className="font-inclusive-sans  text-4xl">Explore My Work</h1>
 
       <div
         className="
-         px-[24px]  flex flex-col  md:grid md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4   items-center  
-        
-        "
+        flex flex-col md:justify-center gap-10 mt-4 "
       >
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
