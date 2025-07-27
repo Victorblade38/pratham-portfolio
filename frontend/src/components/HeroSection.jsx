@@ -28,9 +28,6 @@ const HeroSection = () => {
         </a>
       </div>
       <Navbar />
-      <Button>
-        <resumeButton />
-      </Button>
       <h1 className="text-end font-inclusive-sans text-3xl">Pratham Mhavale</h1>
     </div>
   );
